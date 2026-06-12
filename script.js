@@ -55,7 +55,7 @@
         if (delay > maxDelay) maxDelay = delay;
         setTimeout(() => {
           word.classList.add('revealed');
-        }, delay * 85); // 85ms stagger feels punchy and authoritative
+        }, delay * 60); // 60ms stagger — fast, authoritative, no wasted frames
       });
 
       // Draw headline underline after last word finishes revealing
@@ -64,7 +64,7 @@
         if (headlineLine) {
           headlineLine.classList.add('active');
         }
-      }, maxDelay * 85 + 400); // Trigger draw shortly after last word reveals
+      }, maxDelay * 60 + 280); // Draw line immediately after last word lands
     }, 200);
   }
 
