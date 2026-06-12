@@ -324,6 +324,9 @@
 </div>
 <div class="noise-overlay"></div>
 
+<!-- SITE WRAPPER FOR TRANSITIONS -->
+<div class="site-content" id="site-content">
+
 <!-- NAV -->
 <nav aria-label="Main navigation">
   <a href="#" class="nav-logo" aria-label="Orlyn.AI Home">Orlyn<span>.</span></a>
@@ -331,6 +334,8 @@
     <a href="#services">Agents</a>
     <a href="#industries">Industries</a>
     <a href="#process">Process</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#pricing">Pricing</a>
     <a href="#roi">ROI</a>
     <a href="#contact" class="nav-cta">Get Your Blueprint</a>
   </div>
@@ -345,6 +350,8 @@
     <a href="#services" class="mobile-link">Agents</a>
     <a href="#industries" class="mobile-link">Industries</a>
     <a href="#process" class="mobile-link">Process</a>
+    <a href="#portfolio" class="mobile-link">Portfolio</a>
+    <a href="#pricing" class="mobile-link">Pricing</a>
     <a href="#roi" class="mobile-link">ROI</a>
     <a href="#contact" class="mobile-cta">Get Your Blueprint</a>
   </div>
@@ -370,6 +377,7 @@
       <span class="hero-word" data-delay="7">not</span>
       <span class="hero-word" data-delay="8">have</span>
       <span class="hero-word" data-delay="9">to.</span>
+      <div class="hero-headline-line" id="hero-headline-line"></div>
     </h1>
     <div class="hero-bottom">
       <p class="hero-sub">I build custom AI agents tailored to your industry — whether you run an agency, a real estate business, or an e-commerce store. One agent. One painful problem. Gone for good.</p>
@@ -482,7 +490,7 @@
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
         </div>
         <h3>Onboarding new clients by hand</h3>
-        <p>New customer signs up. Someone emails a welcome, chases documents, creates folders, sets up access. Repeat for every single client. This is the job an agent was made for.</p>
+        <p>New client signs up. Someone emails a welcome, chases documents, creates folders, sets up access. Repeat for every single client. This is the job an agent was made for.</p>
         <span class="problem-stat">3–4 hrs per client → ~$120–160 each</span>
       </div>
     </div>
@@ -715,6 +723,105 @@
           <p>The code is yours forever. No vendor lock-in. Any developer can maintain it.</p>
         </div>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ PORTFOLIO ═══ -->
+<section class="section section-alt" id="portfolio" aria-labelledby="portfolio-heading">
+  <div class="container">
+    <span class="section-eyebrow">04 — Portfolio</span>
+    <h2 class="section-heading" id="portfolio-heading">Agents built and deployed.</h2>
+    <div class="portfolio-grid reveal-up">
+      
+      <!-- Card 1 -->
+      <div class="portfolio-card">
+        <div class="portfolio-card__header">
+          <div class="agent-tags">
+            <span class="tag">Python</span>
+            <span class="tag">Gemini AI</span>
+            <span class="tag">Gmail API</span>
+            <span class="tag">SQLite</span>
+            <span class="tag">Serper API</span>
+          </div>
+          <span class="portfolio-card__badge portfolio-card__badge--live">Live</span>
+        </div>
+        <h3 class="portfolio-card__title">Lead Generation + Outreach System</h3>
+        <p class="portfolio-card__desc">Finds leads from Google, job boards, and LinkedIn. Scores them with AI. Writes personalised cold emails. Sends via Gmail and handles a full follow-up sequence. Fully unattended.</p>
+        <a href="#" class="portfolio-card__link">
+          <span>View Case Study</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="portfolio-card">
+        <div class="portfolio-card__header">
+          <div class="agent-tags">
+            <span class="tag">Python</span>
+            <span class="tag">Gemini AI</span>
+            <span class="tag">Streamlit</span>
+            <span class="tag">SQLite</span>
+          </div>
+          <span class="portfolio-card__badge portfolio-card__badge--live">Live</span>
+        </div>
+        <h3 class="portfolio-card__title">Social Repurposing Agent</h3>
+        <p class="portfolio-card__desc">Turns one long-form piece of content (podcast, blog, transcript) into tweets, LinkedIn posts, and newsletter items in seconds.</p>
+        <a href="#" class="portfolio-card__link">
+          <span>View Case Study</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="portfolio-card">
+        <div class="portfolio-card__header">
+          <div class="agent-tags">
+            <span class="tag">Python</span>
+            <span class="tag">APScheduler</span>
+            <span class="tag">Gmail API</span>
+            <span class="tag">SQLite</span>
+          </div>
+          <span class="portfolio-card__badge portfolio-card__badge--live">Live</span>
+        </div>
+        <h3 class="portfolio-card__title">Lead Follow-Up Agent</h3>
+        <p class="portfolio-card__desc">Ensures 100% lead coverage by instantly following up on inbound inquiries. Triggers email sequences and flags responses for immediate human review.</p>
+        <a href="#" class="portfolio-card__link">
+          <span>View Case Study</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="portfolio-card">
+        <div class="portfolio-card__header">
+          <div class="agent-tags">
+            <span class="tag">Python</span>
+            <span class="tag">Streamlit</span>
+            <span class="tag">SQLite</span>
+            <span class="tag">Gemini AI</span>
+          </div>
+          <span class="portfolio-card__badge portfolio-card__badge--live">Live</span>
+        </div>
+        <h3 class="portfolio-card__title">Client Reporting Agent</h3>
+        <p class="portfolio-card__desc">Pulls performance data from multiple APIs, processes metrics using AI, and generates polished reports in PDF and dashboard formats.</p>
+        <a href="#" class="portfolio-card__link">
+          <span>View Case Study</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══ TESTIMONIALS PLACEHOLDER ═══ -->
+<section class="section" id="testimonials" aria-labelledby="testimonials-heading">
+  <div class="container">
+    <span class="section-eyebrow">05 — Results</span>
+    <div class="testimonials-coming reveal-up">
+      <h2 class="section-heading testimonials-coming__heading" id="testimonials-heading">Client results coming.</h2>
+      <p class="testimonials-coming__subtext">Currently onboarding first clients. Case studies and testimonials will be published here as builds go live.</p>
     </div>
   </div>
 </section>
@@ -965,8 +1072,95 @@
   </div>
 </section>
 
+<!-- ═══ PRICING ═══ -->
+<section class="section section-alt" id="pricing" aria-labelledby="pricing-heading">
+  <div class="container">
+    <span class="section-eyebrow">Pricing</span>
+    <h2 class="section-heading" id="pricing-heading">Transparent build fees.<br>Zero markup.</h2>
+    <div class="pricing-grid reveal-up">
+      
+      <!-- Option A -->
+      <div class="pricing-card">
+        <div class="pricing-card__header">
+          <h3 class="pricing-card__name">Custom Agent Build</h3>
+          <div class="pricing-card__price">$800<span>/one-time</span></div>
+        </div>
+        <ul class="pricing-card__list">
+          <li>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
+            Full custom Python agent built to your workflow
+          </li>
+          <li>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
+            Streamlit dashboard
+          </li>
+          <li>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
+            SQLite database
+          </li>
+          <li>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
+            GitHub code delivery
+          </li>
+          <li>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
+            Screen demo recording
+          </li>
+          <li>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
+            30 days post-launch support
+          </li>
+        </ul>
+        <a href="#contact" class="btn-outline pricing-card__cta">
+          <span>Start Your Build</span>
+        </a>
+      </div>
+
+      <!-- Option B -->
+      <div class="pricing-card pricing-card--recommended">
+        <div class="pricing-card__header">
+          <span class="pricing-card__badge">Most Popular</span>
+          <h3 class="pricing-card__name">Build + Maintain</h3>
+          <div class="pricing-card__price">$800<span> build + </span>$300<span>/month</span></div>
+        </div>
+        <ul class="pricing-card__list">
+          <li>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
+            <strong>Everything in Build</strong>
+          </li>
+          <li>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
+            Monthly updates
+          </li>
+          <li>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
+            Performance monitoring
+          </li>
+          <li>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
+            Bug fixes
+          </li>
+          <li>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
+            Priority support
+          </li>
+          <li>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
+            New feature additions
+          </li>
+        </ul>
+        <a href="#contact" class="btn-primary magnetic pricing-card__cta">
+          <span class="btn-text">Get Full System</span>
+          <span class="btn-glow"></span>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 <!-- ═══ ROI ═══ -->
-<section class="section section-alt" id="roi" aria-labelledby="roi-heading">
+<section class="section" id="roi" aria-labelledby="roi-heading">
   <div class="container">
     <span class="section-eyebrow">07 — The Math</span>
     <h2 class="section-heading" id="roi-heading">Find your business's<br><em>found money.</em></h2>
@@ -1036,7 +1230,7 @@
 </section>
 
 <!-- ═══ TRUST ═══ -->
-<section class="section" id="trust" aria-labelledby="trust-heading">
+<section class="section section-alt" id="trust" aria-labelledby="trust-heading">
   <div class="container">
     <span class="section-eyebrow">08 — Zero Technical Friction</span>
     <h2 class="section-heading" id="trust-heading">You don't need to know how it works.<br>You just need it to <em>work.</em></h2>
@@ -1072,7 +1266,7 @@
 </section>
 
 <!-- ═══ FAQ ═══ -->
-<section class="section section-alt" id="faq" aria-labelledby="faq-heading">
+<section class="section" id="faq" aria-labelledby="faq-heading">
   <div class="container">
     <span class="section-eyebrow">09 — Common Questions</span>
     <h2 class="section-heading" id="faq-heading">Frequently asked</h2>
@@ -1272,10 +1466,10 @@
       </div>
       <div class="footer-links">
         <h4 class="footer-heading">Agents</h4>
-        <a href="#services">Lead Generation</a>
-        <a href="#services">Client Reporting</a>
-        <a href="#services">Onboarding Automation</a>
-        <a href="#services">Content Repurposing</a>
+        <a href="#portfolio">Lead Gen + Outreach</a>
+        <a href="#portfolio">Social Repurposing</a>
+        <a href="#portfolio">Lead Follow-Up</a>
+        <a href="#portfolio">Client Reporting</a>
       </div>
       <div class="footer-links">
         <h4 class="footer-heading">Industries</h4>
@@ -1302,6 +1496,8 @@
 <button class="scroll-top" id="scroll-top" aria-label="Scroll to top">
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 15l-6-6-6 6"/></svg>
 </button>
+
+</div> <!-- /site-content -->
 
 <script src="script.js"></script>
 <script>

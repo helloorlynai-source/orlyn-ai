@@ -25,6 +25,7 @@
       clearInterval(loadInterval);
       setTimeout(() => {
         loader.classList.add('hidden');
+        document.body.classList.add('site-loaded');
         initHeroReveal();
       }, 600);
     } else {
@@ -48,12 +49,22 @@
 
     // Stagger reveal
     setTimeout(() => {
+      let maxDelay = 0;
       words.forEach((word, i) => {
         const delay = parseInt(word.dataset.delay) || 0;
+        if (delay > maxDelay) maxDelay = delay;
         setTimeout(() => {
           word.classList.add('revealed');
-        }, delay * 120);
+        }, delay * 85); // 85ms stagger feels punchy and authoritative
       });
+
+      // Draw headline underline after last word finishes revealing
+      setTimeout(() => {
+        const headlineLine = document.getElementById('hero-headline-line');
+        if (headlineLine) {
+          headlineLine.classList.add('active');
+        }
+      }, maxDelay * 85 + 400); // Trigger draw shortly after last word reveals
     }, 200);
   }
 
@@ -80,7 +91,7 @@
   animateFollower();
 
   // Cursor hover states
-  const hoverTargets = document.querySelectorAll('a, button, .demo-tab, .calc-input, .contact-email-card');
+  const hoverTargets = document.querySelectorAll('a, button, .demo-tab, .calc-input, .contact-email-card, .pricing-card, .portfolio-card');
   hoverTargets.forEach(el => {
     el.addEventListener('mouseenter', () => {
       cursor.classList.add('active');
